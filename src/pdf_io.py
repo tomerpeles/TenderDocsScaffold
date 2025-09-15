@@ -13,41 +13,31 @@ def load_pdf_pages(pdf_path, overlap=0):
     try:
         import fitz  # PyMuPDF
         doc = fitz.open(pdf_path)
-        all_text = ""
-        page_texts = []
 
-        # First pass: extract all text from pages
-        for i, page in enumerate(doc):
+        # First pass: extract all page texts
+        all_page_texts = []
+        for page in doc:
             text = page.get_text("text")
             if not text or len(text.strip()) < 10:
                 # OCR hook could go here if needed
                 text = ""
-            page_texts.append({"page_no": i+1, "text": text})
-            all_text += text + " "
+            all_page_texts.append(text)
+
+        # Second pass: apply overlap
+        for i, text in enumerate(all_page_texts):
+            final_text = text
+
+            # Add overlap from next page if it exists and overlap > 0
+            if overlap > 0 and i + 1 < len(all_page_texts):
+                next_page_text = all_page_texts[i + 1]
+                next_words = next_page_text.split()
+                overlap_words = next_words[:min(overlap, len(next_words))]
+                if overlap_words:
+                    final_text += " " + " ".join(overlap_words)
+
+            pages.append({"page_no": i+1, "text": final_text})
 
         doc.close()
-
-        # If overlap is 0, return original page-based structure
-        if overlap == 0:
-            return page_texts
-
-        # Apply overlap by appending words from next page to current page
-        for i in range(len(page_texts)):
-            current_page = page_texts[i]
-
-            # If there's a next page, append overlap words from it
-            if i + 1 < len(page_texts):
-                next_page_text = page_texts[i + 1]["text"]
-                next_page_words = next_page_text.split()
-
-                # Take up to 'overlap' words from next page
-                overlap_words = next_page_words[:min(overlap, len(next_page_words))]
-
-                if overlap_words:
-                    current_page["text"] += " " + " ".join(overlap_words)
-
-        return page_texts
-
     except Exception as e:
         # Minimal fallback without external libs: read as binary placeholder
         # (For real use, please install pymupdf)
