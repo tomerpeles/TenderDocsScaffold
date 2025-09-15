@@ -1,0 +1,21 @@
+# Core
+regex
+tqdm
+pydantic>=2.0
+python-dateutil
+babel
+
+# PDF
+pymupdf
+pdfminer.six
+
+# OCR (optional)
+pytesseract
+ocrmypdf
+
+# Embeddings (optional but recommended)
+sentence-transformers
+faiss-cpu
+
+# OpenAI (optional if you use --mock)
+openai>=1.40.0

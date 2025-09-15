@@ -1,0 +1,140 @@
+{
+  "results": [
+    {
+      "parameter": "client_name",
+      "answer": "דוגמה",
+      "details": "תשובה לדוגמה במצב הדמיה (mock).",
+      "source": [
+        {
+          "page": 1,
+          "snippet": "…"
+        }
+      ],
+      "confidence": 4
+    },
+    {
+      "parameter": "tender_name",
+      "answer": "דוגמה",
+      "details": "תשובה לדוגמה במצב הדמיה (mock).",
+      "source": [
+        {
+          "page": 1,
+          "snippet": "…"
+        }
+      ],
+      "confidence": 4
+    },
+    {
+      "parameter": "evaluation_method",
+      "answer": "דוגמה",
+      "details": "תשובה לדוגמה במצב הדמיה (mock).",
+      "source": [
+        {
+          "page": 1,
+          "snippet": "…"
+        }
+      ],
+      "confidence": 4
+    },
+    {
+      "parameter": "bid_guarantee",
+      "answer": "דוגמה",
+      "details": "תשובה לדוגמה במצב הדמיה (mock).",
+      "source": [
+        {
+          "page": 1,
+          "snippet": "…"
+        }
+      ],
+      "confidence": 4
+    },
+    {
+      "parameter": "contract_period",
+      "answer": "דוגמה",
+      "details": "תשובה לדוגמה במצב הדמיה (mock).",
+      "source": [
+        {
+          "page": 1,
+          "snippet": "…"
+        }
+      ],
+      "confidence": 4
+    },
+    {
+      "parameter": "threshold_conditions",
+      "answer": "דוגמה",
+      "details": "תשובה לדוגמה במצב הדמיה (mock).",
+      "source": [
+        {
+          "page": 1,
+          "snippet": "…"
+        }
+      ],
+      "confidence": 4
+    },
+    {
+      "parameter": "idea_author",
+      "answer": "אצמנ אל",
+      "details": "",
+      "source": [],
+      "confidence": 2
+    }
+  ],
+  "traces": [
+    {
+      "parameter": "client_name",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 364
+    },
+    {
+      "parameter": "tender_name",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 363
+    },
+    {
+      "parameter": "evaluation_method",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 378
+    },
+    {
+      "parameter": "bid_guarantee",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 369
+    },
+    {
+      "parameter": "contract_period",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 377
+    },
+    {
+      "parameter": "threshold_conditions",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 380
+    },
+    {
+      "parameter": "idea_author",
+      "tagged_pages": [
+        1
+      ],
+      "prompt_chars": 366
+    }
+  ],
+  "meta": {
+    "pdf_path": "D:\\MLOps\\homework\\rag_tender_scaffold\\data\\tender_sample.pdf",
+    "params_hash": "e426a20619ea14fd7a4331188bd980fa",
+    "timestamp": 1757951927,
+    "duration_sec": 28.02
+  }
+}

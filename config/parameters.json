@@ -1,0 +1,101 @@
+[
+  {
+    "key": "client_name",
+    "label_he": "שם המזמין",
+    "type": "string",
+    "keywords": [
+      "המזמין",
+      "העירייה",
+      "הרשות",
+      "משרד"
+    ],
+    "regex": [],
+    "max_pages": 6,
+    "required": true
+  },
+  {
+    "key": "tender_name",
+    "label_he": "שם המכרז",
+    "type": "string",
+    "keywords": [
+      "שם המכרז",
+      "כותרת המכרז"
+    ],
+    "regex": [],
+    "max_pages": 6,
+    "required": false
+  },
+  {
+    "key": "evaluation_method",
+    "label_he": "שיטת ההערכה",
+    "type": "string",
+    "keywords": [
+      "שיטת ההערכה",
+      "קריטריוני ניקוד",
+      "אופן שקלול",
+      "משקל"
+    ],
+    "regex": [
+      "שקלול.*?ניקוד",
+      "איכות.*?מחיר"
+    ],
+    "max_pages": 6,
+    "required": false
+  },
+  {
+    "key": "bid_guarantee",
+    "label_he": "ערבות מכרז",
+    "type": "money",
+    "keywords": [
+      "ערבות מכרז",
+      "סוג הערבות",
+      "סכום הערבות",
+      "ערבות בנקאית"
+    ],
+    "regex": [
+      "ערבות.*?(?:₪|ש\\\"ח|NIS|[0-9][\\d,\\.]*)"
+    ],
+    "max_pages": 6,
+    "required": false
+  },
+  {
+    "key": "contract_period",
+    "label_he": "תקופת ההתקשרות",
+    "type": "period",
+    "keywords": [
+      "משך ההתקשרות",
+      "תקופת ההתקשרות",
+      "תקופה"
+    ],
+    "regex": [
+      "\\d+\\s*(?:חודשים|שנים|חודש|שנה)"
+    ],
+    "max_pages": 6,
+    "required": false
+  },
+  {
+    "key": "threshold_conditions",
+    "label_he": "תנאי סף",
+    "type": "list",
+    "keywords": [
+      "תנאי סף",
+      "כשירות",
+      "דרישות סף"
+    ],
+    "regex": [],
+    "max_pages": 8,
+    "required": false
+  },
+  {
+    "key": "idea_author",
+    "label_he": "הוגה הרעיון",
+    "type": "string",
+    "keywords": [
+      "הוגה הרעיון"
+    ],
+    "regex": [],
+    "max_pages": 4,
+    "required": false,
+    "if_missing": "אצמנ אל"
+  }
+]
