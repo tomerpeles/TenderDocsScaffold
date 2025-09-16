@@ -9,7 +9,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "args": ["--pdf", "data/small-1-4.pdf", "--params", "config/parameters.json", "--out", "output", "--mock"],
+            "args": ["--pdf", "data/small-1-4.pdf", "--params", "config/parameters.json", "--out", "output", "--overlap", "50"],
             "console": "integratedTerminal"
         },
         {
@@ -17,7 +17,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/main.py",
-            "args": ["--pdf", "data/small-1-4.pdf", "--params", "config/parameters.json", "--out", "output", "--mock"],
+            "args": ["--pdf", "data/small-1-4.pdf", "--params", "config/parameters.json", "--out", "output", "--mock", "--overlap", "50"],
             "console": "integratedTerminal"
         }
     ]

@@ -2,75 +2,45 @@
   "results": [
     {
       "parameter": "client_name",
-      "answer": "דוגמה",
-      "details": "תשובה לדוגמה במצב הדמיה (mock).",
-      "source": [
-        {
-          "page": 1,
-          "snippet": "…"
-        }
-      ],
-      "confidence": 4
+      "answer": "הרשות לשמירת הטבע והגנים לאומיים",
+      "details": "",
+      "source": [],
+      "confidence": 3
     },
     {
       "parameter": "tender_name",
-      "answer": "דוגמה",
-      "details": "תשובה לדוגמה במצב הדמיה (mock).",
-      "source": [
-        {
-          "page": 1,
-          "snippet": "…"
-        }
-      ],
-      "confidence": 4
+      "answer": "אספקת אפליקציה פנים ארגונית",
+      "details": "",
+      "source": [],
+      "confidence": 3
     },
     {
       "parameter": "evaluation_method",
-      "answer": "דוגמה",
-      "details": "תשובה לדוגמה במצב הדמיה (mock).",
-      "source": [
-        {
-          "page": 1,
-          "snippet": "…"
-        }
-      ],
-      "confidence": 4
+      "answer": "אצמנ אל",
+      "details": "",
+      "source": [],
+      "confidence": 2
     },
     {
       "parameter": "bid_guarantee",
-      "answer": "דוגמה",
-      "details": "תשובה לדוגמה במצב הדמיה (mock).",
-      "source": [
-        {
-          "page": 1,
-          "snippet": "…"
-        }
-      ],
-      "confidence": 4
+      "answer": "אצמנ אל",
+      "details": "",
+      "source": [],
+      "confidence": 2
     },
     {
       "parameter": "contract_period",
-      "answer": "דוגמה",
-      "details": "תשובה לדוגמה במצב הדמיה (mock).",
-      "source": [
-        {
-          "page": 1,
-          "snippet": "…"
-        }
-      ],
-      "confidence": 4
+      "answer": "שנה וחודשיים",
+      "details": "תקופת ההתקשרות תהא למשך שנה וחודשיים מיום חתימת ההסכם כאשר שני חודשי ההתקשרות הראשוניים יהיו לצורך הטמעה ראשונית וללא תשלום מצד הרשות.",
+      "source": [],
+      "confidence": 3
     },
     {
       "parameter": "threshold_conditions",
-      "answer": "דוגמה",
-      "details": "תשובה לדוגמה במצב הדמיה (mock).",
-      "source": [
-        {
-          "page": 1,
-          "snippet": "…"
-        }
-      ],
-      "confidence": 4
+      "answer": "אצמנ אל",
+      "details": "",
+      "source": [],
+      "confidence": 2
     },
     {
       "parameter": "idea_author",
@@ -84,57 +54,78 @@
     {
       "parameter": "client_name",
       "tagged_pages": [
-        1
+        3,
+        2,
+        1,
+        4
       ],
-      "prompt_chars": 364
+      "prompt_chars": 7078
     },
     {
       "parameter": "tender_name",
       "tagged_pages": [
-        1
+        4,
+        2,
+        1,
+        3
       ],
-      "prompt_chars": 363
+      "prompt_chars": 7077
     },
     {
       "parameter": "evaluation_method",
       "tagged_pages": [
-        1
+        4,
+        1,
+        3,
+        2
       ],
-      "prompt_chars": 378
+      "prompt_chars": 7092
     },
     {
       "parameter": "bid_guarantee",
       "tagged_pages": [
-        1
+        4,
+        2,
+        1,
+        3
       ],
-      "prompt_chars": 369
+      "prompt_chars": 7083
     },
     {
       "parameter": "contract_period",
       "tagged_pages": [
+        3,
+        4,
+        2,
         1
       ],
-      "prompt_chars": 377
+      "prompt_chars": 7091
     },
     {
       "parameter": "threshold_conditions",
       "tagged_pages": [
-        1
+        4,
+        3,
+        1,
+        2
       ],
-      "prompt_chars": 380
+      "prompt_chars": 7094
     },
     {
       "parameter": "idea_author",
       "tagged_pages": [
-        1
+        1,
+        3,
+        2,
+        4
       ],
-      "prompt_chars": 366
+      "prompt_chars": 7080
     }
   ],
   "meta": {
-    "pdf_path": "D:\\MLOps\\homework\\rag_tender_scaffold\\data\\tender_sample.pdf",
+    "pdf_path": "D:\\MLOps\\homework\\rag_tender_scaffold\\data\\small-1-4.pdf",
     "params_hash": "e426a20619ea14fd7a4331188bd980fa",
-    "timestamp": 1757951927,
-    "duration_sec": 28.02
+    "timestamp": 1758052945,
+    "duration_sec": 172.18
   }
 }
