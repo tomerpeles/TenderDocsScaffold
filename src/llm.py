@@ -1,4 +1,8 @@
 import os, json, random
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def _mock_answer(param_key, prompt):
     # Very simple mock for offline runs
