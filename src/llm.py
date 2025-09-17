@@ -7,7 +7,7 @@ load_dotenv()
 def _mock_answer(param_key, prompt):
     # Very simple mock for offline runs
     if "idea_author" in param_key:
-        return {"parameter": param_key, "answer": "אצמנ אל", "details": "", "source": [], "confidence": 1}
+        return {"parameter": param_key, "answer": "לא נמצא", "details": "", "source": [], "confidence": 1}
     # fabricate something deterministic-ish
     base = {
         "parameter": param_key,
@@ -24,16 +24,16 @@ def call_llm_for_param(param, prompt, mock=False):
 
     try:
         from openai import OpenAI
-        client = OpenAI()
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        model_name = os.getenv("OPENAI_MODEL_NAME", "gpt-4o-mini")
         # JSON-mode style; adjust to your chosen model
         resp = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model_name,
             response_format={"type": "json_object"},
             messages=[
                 {"role":"system","content":"החזר JSON בלבד."},
                 {"role":"user","content":prompt}
-            ],
-            temperature=0.2
+            ]
         )
         content = resp.choices[0].message.content
         return json.loads(content)

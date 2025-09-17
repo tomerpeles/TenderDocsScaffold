@@ -34,7 +34,7 @@ def main():
     traces = []
 
     for param in tqdm(params, desc="Processing parameters"):
-        topk = args.topk or param.get("max_pages", 5)
+        topk = args.topk or param.get("max_pages", 4)
         tagged = tag_pages_for_parameter(param, pages, embed_index, topk=topk)
         prompt = build_prompt_for_param(param, tagged, pages)
 

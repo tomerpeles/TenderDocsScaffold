@@ -16,9 +16,14 @@ def normalize_period(text):
 def compute_confidence(raw):
     # Simple heuristic
     c = 1
-    ans = (raw or {}).get("answer","").strip()
-    src = (raw or {}).get("source",[])
-    if ans and ans != "אצמנ אל":
+    ans = ''
+    ans = str((raw or {}).get("answer","")).strip()
+    # if isinstance((raw or {}).get("answer",""), dict) :
+    #     ans = str((raw or {}).get("answer","")).strip()
+    # else:
+    #     ans = (raw or {}).get("answer","").strip()
+    src = (raw or {}).get("source","")
+    if ans and ans != "לא נמצא":
         c += 1
     if isinstance(src, list) and len(src) >= 1:
         c += 1

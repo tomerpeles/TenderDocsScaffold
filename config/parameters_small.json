@@ -1,0 +1,17 @@
+[
+  {
+    "key": "tender_name",
+    "label_he": "שם המכרז",
+    "description_he": "כותרת או השם הרשמי של המכרז כפי שמופיע במסמך",
+    "type": "string",
+    "keywords": [
+      "שם המכרז",
+      "כותרת המכרז",
+      "מכרז פומבי",
+      "מספר מכרז"
+    ],
+    "regex": [],
+    "max_pages": 4,
+    "required": false
+  }
+]

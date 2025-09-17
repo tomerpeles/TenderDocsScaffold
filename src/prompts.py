@@ -7,14 +7,18 @@ def build_prompt_for_param(param, tagged_pages, pages):
     header = (
         "אתה ממלא תפקיד של 'מחלץ נתונים ממכרזים'. "
         "החזר אך ורק JSON תקין בהתאם לסכימה. "
-        "אם אין מידע – החזר answer='אצמנ אל', והשאר details ו-source ריקים.\n"
+        "source= המיקום במסמך שממנו שאבת את התשובה (מספר עמוד ונוסף אחד מאלה: מספר פיסקה,כותרת עליונה, כותרת תחתונה). לדוגמה : עמוד 1, פסקה ראשונה."
+        "details = פירוט נוסף, ניסוח מורחב או פרשנות. הרחב והסבר למה נבחרה התשובה לפרמטר."
+        "אם אין מידע – החזר answer='לא נמצא', והשאר details ו-source ריקים.\n"
+        ""
+        ""
     )
     body = []
     for p in pages:
         if p["page_no"] in tagged_pages:
             snippet = p["text"]
             # keep prompt reasonable
-            snippet = snippet[:10000]
+            snippet = snippet[:5000]
             body.append(f"[PAGE {p['page_no']}]\n{snippet}")
     body_text = "\n\n".join(body) if body else "[אין עמודים רלוונטיים]"
 
@@ -28,6 +32,7 @@ def build_prompt_for_param(param, tagged_pages, pages):
 
     instruction = (
         f"הפק תשובה עבור הפרמטר: {param.get('label_he','')} ({param.get('key','')}). "
+        f"תיאור:   {param.get('description_he','')}. "
         "JSON בלבד, ללא טקסט חופשי נוסף."
     )
 

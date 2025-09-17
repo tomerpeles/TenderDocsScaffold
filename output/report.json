@@ -1,131 +1,31 @@
 {
   "results": [
     {
-      "parameter": "client_name",
-      "answer": "הרשות לשמירת הטבע והגנים לאומיים",
-      "details": "",
-      "source": [],
-      "confidence": 3
-    },
-    {
       "parameter": "tender_name",
-      "answer": "אספקת אפליקציה פנים ארגונית",
-      "details": "",
-      "source": [],
+      "answer": "מכרז פומבי (דו שלבי) מס' 2003-25 לאספקת אפליקציה פנים ארגונית",
+      "details": "נבחר המונח כפי שמופיע בכותרת העליונה של המסמך הכוללת את סוג המכרז, מספר המכרז והנושא: ‘מכרז פומבי (דו שלבי) מס' 2003-25 לאספקת אפליקציה פנים ארגונית’. זוהי הכותרת הרשמית המזהה את המכרז; הצורה הזו חוזרת גם בעמודים הפתיחה (עמודים 1–3).",
+      "source": "עמוד 1, כותרת עליונה",
       "confidence": 3
-    },
-    {
-      "parameter": "evaluation_method",
-      "answer": "אצמנ אל",
-      "details": "",
-      "source": [],
-      "confidence": 2
-    },
-    {
-      "parameter": "bid_guarantee",
-      "answer": "אצמנ אל",
-      "details": "",
-      "source": [],
-      "confidence": 2
-    },
-    {
-      "parameter": "contract_period",
-      "answer": "שנה וחודשיים",
-      "details": "תקופת ההתקשרות תהא למשך שנה וחודשיים מיום חתימת ההסכם כאשר שני חודשי ההתקשרות הראשוניים יהיו לצורך הטמעה ראשונית וללא תשלום מצד הרשות.",
-      "source": [],
-      "confidence": 3
-    },
-    {
-      "parameter": "threshold_conditions",
-      "answer": "אצמנ אל",
-      "details": "",
-      "source": [],
-      "confidence": 2
-    },
-    {
-      "parameter": "idea_author",
-      "answer": "אצמנ אל",
-      "details": "",
-      "source": [],
-      "confidence": 2
     }
   ],
   "traces": [
     {
-      "parameter": "client_name",
-      "tagged_pages": [
-        3,
-        2,
-        1,
-        4
-      ],
-      "prompt_chars": 7078
-    },
-    {
       "parameter": "tender_name",
       "tagged_pages": [
-        4,
+        1,
         2,
-        1,
-        3
-      ],
-      "prompt_chars": 7077
-    },
-    {
-      "parameter": "evaluation_method",
-      "tagged_pages": [
-        4,
-        1,
+        14,
+        15,
         3,
-        2
+        35
       ],
-      "prompt_chars": 7092
-    },
-    {
-      "parameter": "bid_guarantee",
-      "tagged_pages": [
-        4,
-        2,
-        1,
-        3
-      ],
-      "prompt_chars": 7083
-    },
-    {
-      "parameter": "contract_period",
-      "tagged_pages": [
-        3,
-        4,
-        2,
-        1
-      ],
-      "prompt_chars": 7091
-    },
-    {
-      "parameter": "threshold_conditions",
-      "tagged_pages": [
-        4,
-        3,
-        1,
-        2
-      ],
-      "prompt_chars": 7094
-    },
-    {
-      "parameter": "idea_author",
-      "tagged_pages": [
-        1,
-        3,
-        2,
-        4
-      ],
-      "prompt_chars": 7080
+      "prompt_chars": 11329
     }
   ],
   "meta": {
-    "pdf_path": "D:\\MLOps\\homework\\rag_tender_scaffold\\data\\small-1-4.pdf",
-    "params_hash": "e426a20619ea14fd7a4331188bd980fa",
-    "timestamp": 1758052945,
-    "duration_sec": 172.18
+    "pdf_path": "D:\\MLOps\\homework\\rag_tender_scaffold\\data\\tender-teva-full.pdf",
+    "params_hash": "b6a2fabdcd8d727e96c051024f36b5d0",
+    "timestamp": 1758068445,
+    "duration_sec": 92.72
   }
 }
